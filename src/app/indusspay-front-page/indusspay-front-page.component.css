@@ -1,0 +1,233 @@
+.entire-container {
+    position: relative; 
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+    background-color: #f4f7fa;
+}
+
+.entire-container::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('src/assets/image.png') no-repeat center center;
+    background-size: cover; 
+    opacity: 0.02; 
+    z-index: 0; 
+}
+
+.nav, .container {
+    position: relative; 
+    z-index: 1; 
+}
+
+.nav {
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    font-weight: 500;
+}
+
+.navbtn {
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    margin-right: 2rem;
+}
+
+.getstarted {
+    text-align: center;
+    display: flex;
+    height: 2.5rem;
+    width: 11rem;
+    border-radius: 10px;
+    background-color: #473bf0;
+}
+
+.container{
+    display: flex ;
+    justify-content: space-between;
+
+}
+
+.container1{
+    padding-top:90px;
+    flex: 1;
+    text-align: left;
+    
+}
+.container2{
+    flex: 1;
+    text-align: left;
+    
+}
+.title1{
+    color: red;
+}
+.title2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.title3{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+
+.oval-image {
+    width: 25rem; 
+    height: 25rem; 
+    position: absolute;
+    /* margin-top: 8rem; */
+    margin-left: 10rem;
+    background: url('src/assets/Oval.png') no-repeat center center;
+    background-size: cover; 
+    border-radius: 50%;
+    text-align: center;
+}
+.fill-image{
+    width: 6rem; 
+    height: 6rem; 
+    position: relative;
+    /* margin-top: 8rem; */
+    margin-left: 10rem;
+    background: url('src/assets/pattern.png') no-repeat center center;
+    background-size: cover; 
+    border-radius: 50%;
+    text-align: center;
+    
+/* background:red; */
+}
+
+.wave-image{
+    width: 2rem; 
+    height: 5rem; 
+    position: relative;
+    margin-top: 13rem;
+    margin-left: 30rem;
+    background: url('src/assets/wave.png') no-repeat center center;
+    background-size: cover; 
+    /* border-radius: 50%; Makes it oval/circular */
+    text-align: center;
+}
+
+
+.round-image{
+    width: 7rem; 
+    height: 6rem; 
+    position: absolute;
+    margin-top: -4rem;
+    margin-left: 9rem;
+    background: url('src/assets/round.png') no-repeat center center;
+    background-size: cover; 
+    /* border-radius: 50%; Makes it oval/circular */
+    text-align: center;
+
+}
+
+.page2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 7rem;
+    /* text-align: center; */
+}
+
+
+.title4{
+    font-size:20px;
+    color: red;
+    text-align: center;
+}
+
+.title5{
+    color: black;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
+.cards{
+    /* padding-left: 0px 50px 50px 0px; */
+    
+    display: flex;
+    flex-direction: inline;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+}
+
+
+
+.cartoon-image1{
+    width: 7rem; 
+    height: 7rem; 
+    /* margin-top: 8rem; */
+    margin: 0rem 4.5rem 2rem;
+    background: url('src/assets/Programming-rafiki.png') no-repeat center center;
+    background-size: cover; 
+    text-align: center;
+
+/* background:red; */
+}
+.cartoon-image2{
+    width: 6rem; 
+    height: 7rem; 
+    margin: 0rem 4.5rem 2rem;
+    /* margin-top: 8rem; */
+    /* margin-left: 10rem; */
+    background: url('src/assets/Designer-rafiki.png') no-repeat center center;
+    background-size: cover; 
+
+    
+    
+/* background:red; */
+}
+.cartoon-image3{
+    width: 5rem; 
+    height: 7rem; 
+    margin: 0rem 4.5rem 2rem;
+    /* margin-top: 8rem; */
+    /* margin-left: 10rem; */
+    background: url('src/assets/Notes-rafiki.png') no-repeat center center;
+    background-size: cover; 
+   
+    
+    
+/* background:red; */
+}
+
+
+.cartoon-image4{
+    width: 70rem; 
+    height: 19rem; 
+    margin: 0rem 17rem;
+    
+    margin-top: 8rem;
+    /* margin-left: 10rem; */
+    background: url('src/assets/Testimonial.png') no-repeat center center;
+    background-size: cover; 
+   
+    
+    
+/* background:red; */
+}
+
+.card-text{
+    padding-bottom: 2rem;
+    
+}
+.learn-more{
+    color: #f4f7fa;
+    font-weight: 500;
+}
