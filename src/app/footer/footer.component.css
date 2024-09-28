@@ -75,15 +75,25 @@ hr{
     background-color: #2d2d2d;
 }
 
-.testimonialfooter{
-    width: 170%;
-    max-width: 70rem;
-    height: 65rem;
-    background-size: contain;
-    position: relative;
-    margin-top: 2rem; 
-    margin-left: 15rem;
-    
+.newimage-container {
+   
+    width: 100%; /* Set desired width */
+    height: 30rem; /* Set desired height */
     background: url('src/assets/Testimonialfooter.png') no-repeat center center;
+    background-color: #473bf0;
+    background-size: contain;
+    margin: 0 auto; /* Center the container */
+    
+}
 
+.container{
+    margin-top: 4rem;
+}
+
+
+@media (max-width: 1290px) {
+    .newimage-container {
+        width: 85rem; 
+        /* margin-left: -10rem;   */
+    }
 }
