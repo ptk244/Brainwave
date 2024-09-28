@@ -24,4 +24,8 @@ export class ContactserviceService {
    getUserById(id:any){
      return this.http.get(`${this.url}/${id}`)
    }
+
+   deleteRow(id:number){
+    return this.http.delete(`${this.url}/${id}`)
+   }
 }

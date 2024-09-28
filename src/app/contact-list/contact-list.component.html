@@ -18,7 +18,8 @@
           <th>PAN No</th>
           <th>Aadhaar No</th>
           <th>Status</th>
-          <th>Action</th>
+          <th colspan="2">Action</th>
+          
       </tr>
     </thead>
     <tbody>
@@ -36,6 +37,9 @@
             <td>{{ user.status ? 'Active' : 'Inactive' }}</td>
             <td>
                 <button type="button" (click)="onEditUser(user)" class="btn btn-outline-success">Edit</button>
+            </td>
+            <td>
+                <button type="button" (click)="onDelete(user)" class="btn btn-outline-danger">Delete</button>
             </td>
           </tr>
       

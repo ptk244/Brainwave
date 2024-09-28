@@ -38,4 +38,18 @@ export class ContactListComponent {
     
       this.router.navigate([`/editcontact/${user.id}`])
   } 
+
+  onDelete(user:any){
+    this.contactservice.deleteRow(user.id).subscribe({
+      next:(result:any)=>{
+        console.log("user deleted sucessfully");
+        this.getUserData();
+        
+      },
+      error:(error)=>{
+        console.log("there is error",error);
+        
+      }
+    })
+  }
 }
