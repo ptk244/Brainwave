@@ -11,6 +11,6 @@ export class IndusspayFrontPageComponent {
   constructor(private router: Router) {}
 
   contactform(){
-    this.router.navigate(['/contact-us']);
+    this.router.navigate(['/contactlist']);
   }
 }

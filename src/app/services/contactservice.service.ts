@@ -12,4 +12,8 @@ export class ContactserviceService {
   saveData(data:any){
     return this.http.post(this.url,data);
    }
+
+   getuserList(){
+    return this.http.get(this.url)
+   }
 }

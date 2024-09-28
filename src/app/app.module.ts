@@ -9,6 +9,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactListComponent } from './contact-list/contact-list.component';
 
 
 
@@ -19,7 +20,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     IndusspayFrontPageComponent,
     FooterComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    ContactListComponent
   ],
   imports: [
     BrowserModule,
