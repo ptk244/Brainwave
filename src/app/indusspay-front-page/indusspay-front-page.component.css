@@ -380,4 +380,15 @@
     
     background: url('src/assets/Works.png') no-repeat center center;
 }
+.testimonialfooter{
+    width: 170%;
+    max-width: 70rem;
+    height: 65rem;
+    background-size: contain;
+    position: relative;
+    margin-top: 2rem; 
+    margin-left: 15rem;
+    
+    background: url('src/assets/Testimonialfooter.png') no-repeat center center;
 
+}
