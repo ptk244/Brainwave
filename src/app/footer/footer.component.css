@@ -1,0 +1,76 @@
+.footer {
+    background-color: #343a40; /* Dark background */
+    padding: 40px 0; /* Padding for the footer */
+    color: white; /* White text color */
+}
+.footer h5 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.footer .col-md-1 {
+    margin-right: 20px; /* Space between columns */
+}
+.footer .col-md-1:last-child {
+    margin-right: 0; /* Remove margin from the last column */
+}
+
+a{
+    color: aliceblue;
+    font-weight: 500;
+}
+
+a:hover {
+    color: #f8f9fa; 
+    transition: transform 0.5s ease;
+    text-decoration: none; 
+}
+
+.CompanyName{
+    font-size: 30px;
+    margin-bottom: 2rem;
+}
+
+.Company{
+    padding-right:5rem ;
+}
+
+li{
+    padding: 0.3rem 0rem;
+}
+
+.social{  
+    width: 12rem; 
+    height: 1.5rem; 
+    /* margin: 0rem 4.5rem 2rem;  */
+    background: url('src/assets/Social.png') ; 
+    background-size: cover; 
+  }
+
+  .main-content{
+    display: flex;
+    background-color: #343a40; 
+    color: aliceblue;
+    margin-bottom: 3rem;
+    justify-content: space-evenly;
+    
+  }
+
+  .getstarted {
+    text-align: center;
+    display: flex;
+    height: 2.5rem;
+    width: 11rem;
+    border-radius: 10px;
+    background-color: #473bf0;
+    border: none;
+}
+
+  
+hr{
+    color: white;
+}
+
+hr{
+    background-color: #2d2d2d;
+}
