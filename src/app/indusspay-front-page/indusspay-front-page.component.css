@@ -214,20 +214,55 @@
 }
 
 
-.cartoon-image4{
-    width: 70rem; 
-    height: 19rem; 
-    margin: 6rem 17rem 0rem 17rem;
+.cartoon-image4-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-size: cover;
-    padding: 1rem; 
-   
-    background: url('src/assets/Testimonial.png') no-repeat center center;
-
-   
+    align-items: flex-start; /* Align at the top initially */
+    width: 100%;
+    height: auto;
+    padding: 0; /* Remove padding */
+    position: relative;
 }
+
+/* The image container */
+.cartoon-image4 {
+    width: 100%;
+    max-width: 70rem; /* Max width for large screens */
+    height: 19rem;
+    background: url('src/assets/Testimonial.png') no-repeat center center;
+    background-size: contain;
+    position: relative;
+    margin-top: 6rem; /* Top margin */
+    margin-left: 15rem; /* Left margin */
+}
+
+/* Responsive styling for tablets and smaller screens */
+@media (max-width: 1290px) {
+    .cartoon-image4 {
+        max-width: 60rem; /* Reduce the max width */
+        margin-left: 3rem; /* Adjust left margin for smaller screens */
+        margin-top: 5rem; /* Adjust top margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .cartoon-image4 {
+        max-width: 50rem; /* Further reduce max width for tablets */
+        margin-left: 5rem; /* Adjust left margin for tablets */
+        margin-top: 4rem; /* Adjust top margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .cartoon-image4 {
+        max-width: 90%; /* Full width on mobile screens */
+        margin-left: 0; /* Center on mobile */
+        margin-top: 2rem; /* Reduce top margin */
+    }
+}
+
+
+
 
 .card-text{
     padding-bottom: 2rem;
@@ -291,15 +326,58 @@
     
   }
 
-  .newimage{
+  .newimage-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    width: 100%;
+    height: auto;
+    padding: 0; 
+    position: relative;
+    margin-left: -7rem;
+  }
 
-    width: 70rem; 
-    height: 56rem; 
-    margin: 6rem 17rem 0rem 17rem;
+  .newimage{
+    width: 170%;
+    max-width: 70rem;
+    height: 65rem;
+    background-size: contain;
+    position: relative;
+    margin-top: 2rem; 
+    margin-left: 15rem;
     
-    /* margin-top: 8rem; */
-    /* margin-left: 10rem; */
     background: url('src/assets/About.png') no-repeat center center;
-    /* background-size: cover;  */
+    
     
   }
+
+  @media (max-width: 1290px) {
+    .newimage-container {
+        width: 85rem; 
+        margin-left: -10rem;  
+    }
+}
+
+.features{
+    width: 170%;
+    max-width: 70rem;
+    height: 65rem;
+    background-size: contain;
+    position: relative;
+    margin-top: 2rem; 
+    margin-left: 15rem;
+    
+    background: url('src/assets/Features.png') no-repeat center center;
+}
+.works{
+    width: 170%;
+    max-width: 70rem;
+    height: 65rem;
+    background-size: contain;
+    position: relative;
+    margin-top: 2rem; 
+    margin-left: 15rem;
+    
+    background: url('src/assets/Works.png') no-repeat center center;
+}
+
