@@ -329,10 +329,10 @@
   .newimage-container{
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align at the top initially */
+    align-items: flex-start; 
     width: 100%;
     height: auto;
-    padding: 0; /* Remove padding */
+    padding: 0; 
     position: relative;
     margin-left: -7rem;
   }
@@ -368,5 +368,16 @@
     margin-left: 15rem;
     
     background: url('src/assets/Features.png') no-repeat center center;
+}
+.works{
+    width: 170%;
+    max-width: 70rem;
+    height: 65rem;
+    background-size: contain;
+    position: relative;
+    margin-top: 2rem; 
+    margin-left: 15rem;
+    
+    background: url('src/assets/Works.png') no-repeat center center;
 }
 
