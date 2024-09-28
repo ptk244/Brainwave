@@ -8,6 +8,7 @@ import { ContactserviceService } from '../services/contactservice.service';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent {
+  userslength: any;
   constructor(private router:Router , private contactservice:ContactserviceService) {
 
   }
@@ -21,7 +22,8 @@ export class ContactListComponent {
     this.contactservice.getuserList().subscribe({
       next:(result)=>{
         this.users=result;
-        console.log(result);
+        this.userslength=this.users.length
+        console.log(this.userslength);
         
       }
     })
@@ -32,6 +34,8 @@ export class ContactListComponent {
   }
 
   onEditUser(user:any){
-      this.router.navigate(['/add-user'])
+    console.log(user.id);
+    
+      this.router.navigate([`/editcontact/${user.id}`])
   } 
 }

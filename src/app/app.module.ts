@@ -10,6 +10,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactListComponent } from './contact-list/contact-list.component';
+import { EditContactComponent } from './edit-contact/edit-contact.component';
 
 
 
@@ -21,7 +22,8 @@ import { ContactListComponent } from './contact-list/contact-list.component';
     IndusspayFrontPageComponent,
     FooterComponent,
     ContactFormComponent,
-    ContactListComponent
+    ContactListComponent,
+    EditContactComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,9 @@
-<div>
-    <button type="button" (click)="onAddUser()" class="btn btn-primary">Primary</button>
-</div>
-<div *ngIf="users.length > 0; else noData">
-    <h2>Saved Users</h2>
+
+<div *ngIf="userslength > 0; else noData">
+    <div class="header-container">
+        <h2>Saved Users</h2>
+        <button style="margin-right: 10px;" type="button" (click)="onAddUser()" class="btn btn-primary">Add User</button>
+      </div>
 <table class="table">
     <thead class="thead-light">
       <tr>
@@ -23,7 +24,7 @@
     <tbody>
         <tr *ngFor="let user of users; let i = index">
             <td>{{ i + 1 }}</td>
-            <td>{{ user.createdAt | date:'shortDate' }}</td>
+            <td>{{ user.createdAt }}</td>
             <td>{{ user.first_name }}</td>
             <td>{{ user.last_name }}</td>
             <td>{{ user.emailId }}</td>
