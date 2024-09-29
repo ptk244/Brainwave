@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body {
+    overflow-x: hidden; 
+    width: 100vw; 
+}
+
+
+.container {
+    max-width: 100%; 
+}
+
+
+img, video {
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.fixed-width-element {
+    width: 100%; 
+    max-width: 1200px; 
+}
+
+
+@media (max-width: 768px) {
+    .some-class {
+        padding: 0 1rem; 
+    }
+}

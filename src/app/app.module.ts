@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { FeatureSectionComponent } from './feature-section/feature-section.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -25,7 +26,8 @@ import { FeatureSectionComponent } from './feature-section/feature-section.compo
     ContactFormComponent,
     ContactListComponent,
     EditContactComponent,
-    FeatureSectionComponent
+    FeatureSectionComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,5 @@ import { Router } from '@angular/router';
 })
 export class IndusspayFrontPageComponent {
 
-  constructor(private router: Router) {}
-
-  contactform(){
-    this.router.navigate(['/contactlist']);
-  }
+ 
 }

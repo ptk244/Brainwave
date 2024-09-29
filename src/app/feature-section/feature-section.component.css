@@ -23,12 +23,13 @@
     font-weight: 700;
     color: #222;
     margin-bottom: 2rem;
+    padding: 0px 29rem;
 }
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns layout */
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr); 
+    /* gap: 2rem; */
     justify-items: center;
     margin-bottom: 3rem;
 }
@@ -37,13 +38,14 @@
     display: flex;
     align-items: center;
     text-align: left;
-    background-color: white;
+    /* background-color: white; */
     padding: 1.5rem 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); */
     transition: transform 0.3s ease;
     max-width: 500px;
     gap: 1.5rem;
+    padding-right: 6rem;
 }
 
 .feature-item:hover {
@@ -52,7 +54,6 @@
 
 .icon-container {
     width: 64px;
-    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,31 +97,92 @@
 }
 
 .cta-section {
-    padding: 2rem;
-    text-align: center;
+    display: flex;
+    /* gap: 20rem; */
+    padding: 6rem;
+    text-align: left;
 }
 
 .cta-section h3 {
     font-size: 1.75rem;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 .cta-section p {
     color: #666;
     font-size: 1rem;
     margin-bottom: 1.5rem;
+    padding-right: 37rem;
 }
 
 .cta-section .btn {
-    padding: 0.75rem 1.5rem;
+    padding: -0.25rem 1.5rem;
     font-size: 1rem;
-    background-color: #5b21ff; /* CTA button color */
+    background-color: #5b21ff; 
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    height: 3rem;
+    width: 17rem;
 }
 
 .cta-section .btn:hover {
     background-color: #3f1bc1;
+}
+
+
+@media (max-width: 1080px) {
+    .title {
+        padding: 0px 10rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .feature-item {
+        max-width: 90%;
+        padding-right: 2rem;
+    }
+
+    .cta-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .cta-section p {
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .cta-section .btn {
+        width: 100%;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .title {
+        padding: 0;
+        font-size: 1.75rem;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .cta-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .cta-section .btn {
+        width: 100%;
+        padding: 1rem;
+    }
 }
