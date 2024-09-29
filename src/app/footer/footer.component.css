@@ -42,7 +42,7 @@ li{
 .social{  
     width: 12rem; 
     height: 1.5rem; 
-    /* margin: 0rem 4.5rem 2rem;  */
+
     background: url('src/assets/Social.png') ; 
     background-size: cover; 
   }

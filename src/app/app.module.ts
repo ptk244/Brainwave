@@ -11,6 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
+import { FeatureSectionComponent } from './feature-section/feature-section.component';
 
 
 
@@ -23,7 +24,8 @@ import { EditContactComponent } from './edit-contact/edit-contact.component';
     FooterComponent,
     ContactFormComponent,
     ContactListComponent,
-    EditContactComponent
+    EditContactComponent,
+    FeatureSectionComponent
   ],
   imports: [
     BrowserModule,
