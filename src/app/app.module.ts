@@ -13,6 +13,7 @@ import { ContactListComponent } from './contact-list/contact-list.component';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { FeatureSectionComponent } from './feature-section/feature-section.component';
 import { HeaderComponent } from './header/header.component';
+import { WorkComponent } from './work/work.component';
 
 
 
@@ -27,7 +28,8 @@ import { HeaderComponent } from './header/header.component';
     ContactListComponent,
     EditContactComponent,
     FeatureSectionComponent,
-    HeaderComponent
+    HeaderComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,
