@@ -19,7 +19,7 @@
     font-weight: 700;
     color: #222;
     margin-bottom: 2rem;
-    padding: 0px 21rem;
+    /* padding: 0px 21rem; */
 }
     
 
@@ -111,5 +111,8 @@
     
     .see-all-link {
         font-size: 1rem;
+    }
+    .case-studies-section{
+        padding: 0%;
     }
 }

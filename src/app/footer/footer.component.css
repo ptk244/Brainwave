@@ -94,6 +94,7 @@
 /* footer */
 
 .footer {
+    background-image: url('src/assets/bg3.png');
     background-color: #343a40;
     padding: 40px 0;
     color: white;
@@ -138,7 +139,6 @@ li {
 
 .main-content {
     display: flex;
-    background-color: #343a40;
     color: aliceblue;
     margin-bottom: 3rem;
     justify-content: space-evenly;
